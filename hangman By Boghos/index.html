@@ -1,42 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="Kugelbrecher" content="HangmanAnya">
-    <title>Hangman Game</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="description" content="Simple Hangman Game">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <link rel="shortcut icon" href="./assets/hangmanIcon.jpg">
+  <meta property="og:image" content="./assets/hangmanIcon.jpg"/>
+  <link href="style.css" rel="stylesheet">
+  <title>Hangman</title>
 </head>
 
 <body>
+  <h1>Hangman</h1>
+  <section></section>
+  <section id="letters">
+    <div id="A">A</div>
+    <div id="B">B</div>
+    <div id="C">C</div>
+    <div id="D">D</div>
+    <div id="E">E</div>
+    <div id="F">F</div>
+    <div id="G">G</div>
+    <div id="H">H</div>
+    <div id="I">I</div>
+    <div id="J">J</div>
+    <div id="K">K</div>
+    <div id="L">L</div>
+    <div id="M">M</div>
+    <div id="N">N</div>
+    <div id="O">O</div>
+    <div id="P">P</div>
+    <div id="Q">Q</div>
+    <div id="R">R</div>
+    <div id="S">S</div>
+    <div id="T">T</div>
+    <div id="U">U</div>
+    <div id="V">V</div>
+    <div id="W">W</div>
+    <div id="X">X</div>
+    <div id="Y">Y</div>
+    <div id="Z">Z</div>
+  </section>
 
-<div class="parent-container">
-    <h1 class="title">Hangman Game!</h1>
-    <div class="container">
-        <div class="in-game-data">
-            Cumulative Score: <span id="score">0</span> <br>
-            Wrong Guesses: <span id="wrongAttempt">0</span> of <span id="totalAttempt"></span> <br>
-            Clicks: <span id="clicks">0</span>
-        </div>
-        <div class="game-site">
-            <img id="hangmanPic" src="images/hang0.jpg" alt="image broken" width="400" height="400">
-            <p>Your Guess:</p>
-            <p id="wordArea">The word to be guessed goes here</p>
-            <div id="keyboard" class="keyboard"></div>
-            <button class="btn btn-info" onClick="hint()">Hint<span id="hint"></span> </button>
-            <button class="btn btn-info" onClick="reset()">Play Again</button>
-        </div>
+  <section id="image">
+    <img src="assets/hangman0.png" alt="hangman">
+  </section>
+
+  <section id="showWord">
+    <p>_______</p>
+  </section>
+
+  <section id="gameover">
+    <div>
+      <p>Game Over(click here to play again)</p>
     </div>
-    <div class="container">
-        <div class="info">
-            Game History <br>
-            Highest Score: <span id="highestScore">0</span> <br>
-            Time in last round: <span id="timeCounter">0</span> <br>
-        </div>
-        
-    </div>
-</div>
+  </section>
 
-<script src="hangman.js"></script>
-
+  <script src="script.js" defer></script>
 </body>
+
 </html>
