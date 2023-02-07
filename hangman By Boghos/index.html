@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Kugelbrecher" content="HangmanAnya">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="parent-container">
+    <h1 class="title">Hangman Game!</h1>
+    <div class="container">
+        <div class="in-game-data">
+            Cumulative Score: <span id="score">0</span> <br>
+            Wrong Guesses: <span id="wrongAttempt">0</span> of <span id="totalAttempt"></span> <br>
+            Clicks: <span id="clicks">0</span>
+        </div>
+        <div class="game-site">
+            <img id="hangmanPic" src="images/hang0.jpg" alt="image broken" width="400" height="400">
+            <p>Your Guess:</p>
+            <p id="wordArea">The word to be guessed goes here</p>
+            <div id="keyboard" class="keyboard"></div>
+            <button class="btn btn-info" onClick="hint()">Hint<span id="hint"></span> </button>
+            <button class="btn btn-info" onClick="reset()">Play Again</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="info">
+            Game History <br>
+            Highest Score: <span id="highestScore">0</span> <br>
+            Time in last round: <span id="timeCounter">0</span> <br>
+        </div>
+        
+    </div>
+</div>
+
+<script src="hangman.js"></script>
+
+</body>
+</html>
